@@ -17,7 +17,7 @@ let winScore,
   score2;
 
 function init() {
-  winScore = 100;
+  winScore = 10;
   diceValue = 0;
   player1 = true;
   currentPoints1 = 0;
@@ -71,6 +71,7 @@ function playerWin() {
   }
   rollDiceBtn.disabled = true;
   holdBtn.disabled = true;
+  diceImage.hidden = true;
 }
 
 function hold() {
